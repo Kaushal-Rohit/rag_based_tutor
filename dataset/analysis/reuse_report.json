@@ -1,0 +1,266 @@
+[
+  {
+    "book": "Chemistry Part I Textbook for Class XII",
+    "chapter": "Solutions",
+    "chapter_number": "1",
+    "source_pdf": "chemistry/lech101.pdf",
+    "status": "extract_required",
+    "reason": "No reusable CSV match by class, subject, book, and chapter."
+  },
+  {
+    "book": "Chemistry Part I Textbook for Class XII",
+    "chapter": "Electrochemistry",
+    "chapter_number": "2",
+    "source_pdf": "chemistry/lech102.pdf",
+    "status": "extract_required",
+    "reason": "No reusable CSV match by class, subject, book, and chapter."
+  },
+  {
+    "book": "Chemistry Part I Textbook for Class XII",
+    "chapter": "Chemical Kinetics",
+    "chapter_number": "3",
+    "source_pdf": "chemistry/lech103.pdf",
+    "status": "extract_required",
+    "reason": "No reusable CSV match by class, subject, book, and chapter."
+  },
+  {
+    "book": "Chemistry Part I Textbook for Class XII",
+    "chapter": "The d- and f-Block Elements",
+    "chapter_number": "4",
+    "source_pdf": "chemistry/lech104.pdf",
+    "status": "extract_required",
+    "reason": "No reusable CSV match by class, subject, book, and chapter."
+  },
+  {
+    "book": "Chemistry Part I Textbook for Class XII",
+    "chapter": "Coordination Compounds",
+    "chapter_number": "5",
+    "source_pdf": "chemistry/lech105.pdf",
+    "status": "extract_required",
+    "reason": "No reusable CSV match by class, subject, book, and chapter."
+  },
+  {
+    "book": "Chemistry Part I Textbook for Class XII",
+    "chapter": "Appendix: Atomic Masses and Element Symbols",
+    "chapter_number": "A1",
+    "source_pdf": "chemistry/lech1a1.pdf",
+    "status": "extract_required",
+    "reason": "No reusable CSV match by class, subject, book, and chapter."
+  },
+  {
+    "book": "Chemistry Part I Textbook for Class XII",
+    "chapter": "Answers: Chemistry Part I",
+    "chapter_number": "ANS-I",
+    "source_pdf": "chemistry/lech1an.pdf",
+    "status": "extract_required",
+    "reason": "No reusable CSV match by class, subject, book, and chapter."
+  },
+  {
+    "book": "Chemistry Part I Textbook for Class XII",
+    "chapter": "Front Matter: Chemistry Part I",
+    "chapter_number": "FM-I",
+    "source_pdf": "chemistry/lech1ps.pdf",
+    "status": "extract_required",
+    "reason": "No reusable CSV match by class, subject, book, and chapter."
+  },
+  {
+    "book": "Chemistry Part II Textbook for Class XII",
+    "chapter": "Haloalkanes and Haloarenes",
+    "chapter_number": "6",
+    "source_pdf": "chemistry_2/lech201.pdf",
+    "status": "extract_required",
+    "reason": "No reusable CSV match by class, subject, book, and chapter."
+  },
+  {
+    "book": "Chemistry Part II Textbook for Class XII",
+    "chapter": "Alcohols, Phenols and Ethers",
+    "chapter_number": "7",
+    "source_pdf": "chemistry_2/lech202.pdf",
+    "status": "extract_required",
+    "reason": "No reusable CSV match by class, subject, book, and chapter."
+  },
+  {
+    "book": "Chemistry Part II Textbook for Class XII",
+    "chapter": "Aldehydes, Ketones and Carboxylic Acids",
+    "chapter_number": "8",
+    "source_pdf": "chemistry_2/lech203.pdf",
+    "status": "extract_required",
+    "reason": "No reusable CSV match by class, subject, book, and chapter."
+  },
+  {
+    "book": "Chemistry Part II Textbook for Class XII",
+    "chapter": "Amines",
+    "chapter_number": "9",
+    "source_pdf": "chemistry_2/lech204.pdf",
+    "status": "extract_required",
+    "reason": "No reusable CSV match by class, subject, book, and chapter."
+  },
+  {
+    "book": "Chemistry Part II Textbook for Class XII",
+    "chapter": "Biomolecules",
+    "chapter_number": "10",
+    "source_pdf": "chemistry_2/lech205.pdf",
+    "status": "extract_required",
+    "reason": "No reusable CSV match by class, subject, book, and chapter."
+  },
+  {
+    "book": "Chemistry Part II Textbook for Class XII",
+    "chapter": "Answers: Chemistry Part II",
+    "chapter_number": "ANS-II",
+    "source_pdf": "chemistry_2/lech2an.pdf",
+    "status": "extract_required",
+    "reason": "No reusable CSV match by class, subject, book, and chapter."
+  },
+  {
+    "book": "Chemistry Part II Textbook for Class XII",
+    "chapter": "Front Matter: Chemistry Part II",
+    "chapter_number": "FM-II",
+    "source_pdf": "chemistry_2/lech2ps.pdf",
+    "status": "extract_required",
+    "reason": "No reusable CSV match by class, subject, book, and chapter."
+  },
+  {
+    "book": "Physics Part I Textbook for Class XII",
+    "chapter": "Electric Charges and Fields",
+    "chapter_number": "1",
+    "source_pdf": "physics_2/leph101.pdf",
+    "status": "extract_required",
+    "reason": "No reusable CSV match by class, subject, book, and chapter."
+  },
+  {
+    "book": "Physics Part I Textbook for Class XII",
+    "chapter": "Electrostatic Potential and Capacitance",
+    "chapter_number": "2",
+    "source_pdf": "physics_2/leph102.pdf",
+    "status": "extract_required",
+    "reason": "No reusable CSV match by class, subject, book, and chapter."
+  },
+  {
+    "book": "Physics Part I Textbook for Class XII",
+    "chapter": "Current Electricity",
+    "chapter_number": "3",
+    "source_pdf": "physics_2/leph103.pdf",
+    "status": "extract_required",
+    "reason": "No reusable CSV match by class, subject, book, and chapter."
+  },
+  {
+    "book": "Physics Part I Textbook for Class XII",
+    "chapter": "Moving Charges and Magnetism",
+    "chapter_number": "4",
+    "source_pdf": "physics_2/leph104.pdf",
+    "status": "extract_required",
+    "reason": "No reusable CSV match by class, subject, book, and chapter."
+  },
+  {
+    "book": "Physics Part I Textbook for Class XII",
+    "chapter": "Magnetism and Matter",
+    "chapter_number": "5",
+    "source_pdf": "physics_2/leph105.pdf",
+    "status": "extract_required",
+    "reason": "No reusable CSV match by class, subject, book, and chapter."
+  },
+  {
+    "book": "Physics Part I Textbook for Class XII",
+    "chapter": "Electromagnetic Induction",
+    "chapter_number": "6",
+    "source_pdf": "physics_2/leph106.pdf",
+    "status": "extract_required",
+    "reason": "No reusable CSV match by class, subject, book, and chapter."
+  },
+  {
+    "book": "Physics Part I Textbook for Class XII",
+    "chapter": "Alternating Current",
+    "chapter_number": "7",
+    "source_pdf": "physics_2/leph107.pdf",
+    "status": "extract_required",
+    "reason": "No reusable CSV match by class, subject, book, and chapter."
+  },
+  {
+    "book": "Physics Part I Textbook for Class XII",
+    "chapter": "Electromagnetic Waves",
+    "chapter_number": "8",
+    "source_pdf": "physics_2/leph108.pdf",
+    "status": "extract_required",
+    "reason": "No reusable CSV match by class, subject, book, and chapter."
+  },
+  {
+    "book": "Physics Part I Textbook for Class XII",
+    "chapter": "Answers: Physics Part I",
+    "chapter_number": "ANS-I",
+    "source_pdf": "physics_2/leph1an.pdf",
+    "status": "extract_required",
+    "reason": "No reusable CSV match by class, subject, book, and chapter."
+  },
+  {
+    "book": "Physics Part I Textbook for Class XII",
+    "chapter": "Front Matter: Physics Part I",
+    "chapter_number": "FM-I",
+    "source_pdf": "physics_2/leph1ps.pdf",
+    "status": "extract_required",
+    "reason": "No reusable CSV match by class, subject, book, and chapter."
+  },
+  {
+    "book": "Physics Part II Textbook for Class XII",
+    "chapter": "Ray Optics and Optical Instruments",
+    "chapter_number": "9",
+    "source_pdf": "physics_3/leph201.pdf",
+    "status": "extract_required",
+    "reason": "No reusable CSV match by class, subject, book, and chapter."
+  },
+  {
+    "book": "Physics Part II Textbook for Class XII",
+    "chapter": "Wave Optics",
+    "chapter_number": "10",
+    "source_pdf": "physics_3/leph202.pdf",
+    "status": "extract_required",
+    "reason": "No reusable CSV match by class, subject, book, and chapter."
+  },
+  {
+    "book": "Physics Part II Textbook for Class XII",
+    "chapter": "Dual Nature of Radiation and Matter",
+    "chapter_number": "11",
+    "source_pdf": "physics_3/leph203.pdf",
+    "status": "extract_required",
+    "reason": "No reusable CSV match by class, subject, book, and chapter."
+  },
+  {
+    "book": "Physics Part II Textbook for Class XII",
+    "chapter": "Atoms",
+    "chapter_number": "12",
+    "source_pdf": "physics_3/leph204.pdf",
+    "status": "extract_required",
+    "reason": "No reusable CSV match by class, subject, book, and chapter."
+  },
+  {
+    "book": "Physics Part II Textbook for Class XII",
+    "chapter": "Nuclei",
+    "chapter_number": "13",
+    "source_pdf": "physics_3/leph205.pdf",
+    "status": "extract_required",
+    "reason": "No reusable CSV match by class, subject, book, and chapter."
+  },
+  {
+    "book": "Physics Part II Textbook for Class XII",
+    "chapter": "Semiconductor Electronics: Materials, Devices and Simple Circuits",
+    "chapter_number": "14",
+    "source_pdf": "physics_3/leph206.pdf",
+    "status": "extract_required",
+    "reason": "No reusable CSV match by class, subject, book, and chapter."
+  },
+  {
+    "book": "Physics Part II Textbook for Class XII",
+    "chapter": "Answers and Appendices: Physics Part II",
+    "chapter_number": "ANS-II",
+    "source_pdf": "physics_3/leph2an.pdf",
+    "status": "extract_required",
+    "reason": "No reusable CSV match by class, subject, book, and chapter."
+  },
+  {
+    "book": "Physics Part II Textbook for Class XII",
+    "chapter": "Front Matter: Physics Part II",
+    "chapter_number": "FM-II",
+    "source_pdf": "physics_3/leph2ps.pdf",
+    "status": "extract_required",
+    "reason": "No reusable CSV match by class, subject, book, and chapter."
+  }
+]

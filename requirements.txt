@@ -1,0 +1,9 @@
+faiss-cpu>=1.7.0
+chromadb>=1.0.0
+sentence-transformers>=2.0.0
+textblob>=0.18.0
+requests>=2.28.0
+numpy>=1.25.0
+pandas>=2.0.0
+tqdm>=4.60.0
+matplotlib>=3.7.0

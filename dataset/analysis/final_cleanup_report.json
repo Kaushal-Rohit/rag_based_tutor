@@ -1,0 +1,32 @@
+{
+  "pdfs_verified": 33,
+  "pdfs_deleted": 35,
+  "files_removed": 110,
+  "duplicates_removed": 0,
+  "empty_files_removed": 0,
+  "dataset_integrity_verified": true,
+  "backup_created": true,
+  "backup_path": "C:\\tmp\\backup_original_pdfs_major_2_20260614_132910",
+  "pdfs_backed_up": 35,
+  "previously_removed_files_accounted": 54,
+  "files_removed_in_final_pass": 56,
+  "removed_directories_in_final_pass": 6,
+  "removed_targets_in_final_pass": [
+    "RAG-Enhanced-NCERT-Tutor-main",
+    "scripts",
+    "analysis",
+    "dataset/raw_extracted",
+    "dataset/chemistry",
+    "dataset/physics"
+  ],
+  "json_cleanup_actions": [],
+  "final_project_root_entries": [
+    "dataset"
+  ],
+  "final_dataset_entries": [
+    "analysis",
+    "rag_chunks",
+    "structured"
+  ],
+  "retained_json_files_count": 76
+}

@@ -1,0 +1,631 @@
+{
+  "books_reused": [
+    {
+      "book_name": "Hornbill",
+      "class": "11",
+      "subject": "English",
+      "chapter": "Multiple Hornbill prose and poetry chapters",
+      "source_file": "RAG-Enhanced-NCERT-Tutor-main\\eng_book.csv",
+      "row_count": 141
+    },
+    {
+      "book_name": "Science",
+      "class": "9",
+      "subject": "Science",
+      "chapter": "Matter in Our Surroundings",
+      "source_file": "RAG-Enhanced-NCERT-Tutor-main\\science_book_ques.csv",
+      "row_count": 109
+    }
+  ],
+  "books_extracted": [
+    "Chemistry Part I Textbook for Class XII",
+    "Chemistry Part II Textbook for Class XII",
+    "Physics Part I Textbook for Class XII",
+    "Physics Part II Textbook for Class XII"
+  ],
+  "chapters_reused": [
+    {
+      "book_name": "Hornbill",
+      "class": "11",
+      "subject": "English",
+      "chapter": "Multiple Hornbill prose and poetry chapters",
+      "source_file": "RAG-Enhanced-NCERT-Tutor-main\\eng_book.csv"
+    },
+    {
+      "book_name": "Science",
+      "class": "9",
+      "subject": "Science",
+      "chapter": "Matter in Our Surroundings",
+      "source_file": "RAG-Enhanced-NCERT-Tutor-main\\science_book_ques.csv"
+    }
+  ],
+  "chapters_extracted": [
+    {
+      "book_name": "Chemistry Part I Textbook for Class XII",
+      "chapter_number": "1",
+      "chapter_name": "Solutions",
+      "source_pdf": "chemistry/lech101.pdf"
+    },
+    {
+      "book_name": "Chemistry Part I Textbook for Class XII",
+      "chapter_number": "2",
+      "chapter_name": "Electrochemistry",
+      "source_pdf": "chemistry/lech102.pdf"
+    },
+    {
+      "book_name": "Chemistry Part I Textbook for Class XII",
+      "chapter_number": "3",
+      "chapter_name": "Chemical Kinetics",
+      "source_pdf": "chemistry/lech103.pdf"
+    },
+    {
+      "book_name": "Chemistry Part I Textbook for Class XII",
+      "chapter_number": "4",
+      "chapter_name": "The d- and f-Block Elements",
+      "source_pdf": "chemistry/lech104.pdf"
+    },
+    {
+      "book_name": "Chemistry Part I Textbook for Class XII",
+      "chapter_number": "5",
+      "chapter_name": "Coordination Compounds",
+      "source_pdf": "chemistry/lech105.pdf"
+    },
+    {
+      "book_name": "Chemistry Part I Textbook for Class XII",
+      "chapter_number": "A1",
+      "chapter_name": "Appendix: Atomic Masses and Element Symbols",
+      "source_pdf": "chemistry/lech1a1.pdf"
+    },
+    {
+      "book_name": "Chemistry Part I Textbook for Class XII",
+      "chapter_number": "ANS-I",
+      "chapter_name": "Answers: Chemistry Part I",
+      "source_pdf": "chemistry/lech1an.pdf"
+    },
+    {
+      "book_name": "Chemistry Part I Textbook for Class XII",
+      "chapter_number": "FM-I",
+      "chapter_name": "Front Matter: Chemistry Part I",
+      "source_pdf": "chemistry/lech1ps.pdf"
+    },
+    {
+      "book_name": "Chemistry Part II Textbook for Class XII",
+      "chapter_number": "6",
+      "chapter_name": "Haloalkanes and Haloarenes",
+      "source_pdf": "chemistry_2/lech201.pdf"
+    },
+    {
+      "book_name": "Chemistry Part II Textbook for Class XII",
+      "chapter_number": "7",
+      "chapter_name": "Alcohols, Phenols and Ethers",
+      "source_pdf": "chemistry_2/lech202.pdf"
+    },
+    {
+      "book_name": "Chemistry Part II Textbook for Class XII",
+      "chapter_number": "8",
+      "chapter_name": "Aldehydes, Ketones and Carboxylic Acids",
+      "source_pdf": "chemistry_2/lech203.pdf"
+    },
+    {
+      "book_name": "Chemistry Part II Textbook for Class XII",
+      "chapter_number": "9",
+      "chapter_name": "Amines",
+      "source_pdf": "chemistry_2/lech204.pdf"
+    },
+    {
+      "book_name": "Chemistry Part II Textbook for Class XII",
+      "chapter_number": "10",
+      "chapter_name": "Biomolecules",
+      "source_pdf": "chemistry_2/lech205.pdf"
+    },
+    {
+      "book_name": "Chemistry Part II Textbook for Class XII",
+      "chapter_number": "ANS-II",
+      "chapter_name": "Answers: Chemistry Part II",
+      "source_pdf": "chemistry_2/lech2an.pdf"
+    },
+    {
+      "book_name": "Chemistry Part II Textbook for Class XII",
+      "chapter_number": "FM-II",
+      "chapter_name": "Front Matter: Chemistry Part II",
+      "source_pdf": "chemistry_2/lech2ps.pdf"
+    },
+    {
+      "book_name": "Physics Part I Textbook for Class XII",
+      "chapter_number": "1",
+      "chapter_name": "Electric Charges and Fields",
+      "source_pdf": "physics_2/leph101.pdf"
+    },
+    {
+      "book_name": "Physics Part I Textbook for Class XII",
+      "chapter_number": "2",
+      "chapter_name": "Electrostatic Potential and Capacitance",
+      "source_pdf": "physics_2/leph102.pdf"
+    },
+    {
+      "book_name": "Physics Part I Textbook for Class XII",
+      "chapter_number": "3",
+      "chapter_name": "Current Electricity",
+      "source_pdf": "physics_2/leph103.pdf"
+    },
+    {
+      "book_name": "Physics Part I Textbook for Class XII",
+      "chapter_number": "4",
+      "chapter_name": "Moving Charges and Magnetism",
+      "source_pdf": "physics_2/leph104.pdf"
+    },
+    {
+      "book_name": "Physics Part I Textbook for Class XII",
+      "chapter_number": "5",
+      "chapter_name": "Magnetism and Matter",
+      "source_pdf": "physics_2/leph105.pdf"
+    },
+    {
+      "book_name": "Physics Part I Textbook for Class XII",
+      "chapter_number": "6",
+      "chapter_name": "Electromagnetic Induction",
+      "source_pdf": "physics_2/leph106.pdf"
+    },
+    {
+      "book_name": "Physics Part I Textbook for Class XII",
+      "chapter_number": "7",
+      "chapter_name": "Alternating Current",
+      "source_pdf": "physics_2/leph107.pdf"
+    },
+    {
+      "book_name": "Physics Part I Textbook for Class XII",
+      "chapter_number": "8",
+      "chapter_name": "Electromagnetic Waves",
+      "source_pdf": "physics_2/leph108.pdf"
+    },
+    {
+      "book_name": "Physics Part I Textbook for Class XII",
+      "chapter_number": "ANS-I",
+      "chapter_name": "Answers: Physics Part I",
+      "source_pdf": "physics_2/leph1an.pdf"
+    },
+    {
+      "book_name": "Physics Part I Textbook for Class XII",
+      "chapter_number": "FM-I",
+      "chapter_name": "Front Matter: Physics Part I",
+      "source_pdf": "physics_2/leph1ps.pdf"
+    },
+    {
+      "book_name": "Physics Part II Textbook for Class XII",
+      "chapter_number": "9",
+      "chapter_name": "Ray Optics and Optical Instruments",
+      "source_pdf": "physics_3/leph201.pdf"
+    },
+    {
+      "book_name": "Physics Part II Textbook for Class XII",
+      "chapter_number": "10",
+      "chapter_name": "Wave Optics",
+      "source_pdf": "physics_3/leph202.pdf"
+    },
+    {
+      "book_name": "Physics Part II Textbook for Class XII",
+      "chapter_number": "11",
+      "chapter_name": "Dual Nature of Radiation and Matter",
+      "source_pdf": "physics_3/leph203.pdf"
+    },
+    {
+      "book_name": "Physics Part II Textbook for Class XII",
+      "chapter_number": "12",
+      "chapter_name": "Atoms",
+      "source_pdf": "physics_3/leph204.pdf"
+    },
+    {
+      "book_name": "Physics Part II Textbook for Class XII",
+      "chapter_number": "13",
+      "chapter_name": "Nuclei",
+      "source_pdf": "physics_3/leph205.pdf"
+    },
+    {
+      "book_name": "Physics Part II Textbook for Class XII",
+      "chapter_number": "14",
+      "chapter_name": "Semiconductor Electronics: Materials, Devices and Simple Circuits",
+      "source_pdf": "physics_3/leph206.pdf"
+    },
+    {
+      "book_name": "Physics Part II Textbook for Class XII",
+      "chapter_number": "ANS-II",
+      "chapter_name": "Answers and Appendices: Physics Part II",
+      "source_pdf": "physics_3/leph2an.pdf"
+    },
+    {
+      "book_name": "Physics Part II Textbook for Class XII",
+      "chapter_number": "FM-II",
+      "chapter_name": "Front Matter: Physics Part II",
+      "source_pdf": "physics_3/leph2ps.pdf"
+    }
+  ],
+  "total_chunks_created": 5388,
+  "pdf_extraction_details": [
+    {
+      "source_pdf": "chemistry/lech101.pdf",
+      "book_name": "Chemistry Part I Textbook for Class XII",
+      "chapter_number": "1",
+      "chapter_name": "Solutions",
+      "raw_pages": 30,
+      "structured_items": 460,
+      "chunks_created": 316,
+      "low_text_pages": [],
+      "ocr_fallback": "not_required"
+    },
+    {
+      "source_pdf": "chemistry/lech102.pdf",
+      "book_name": "Chemistry Part I Textbook for Class XII",
+      "chapter_number": "2",
+      "chapter_name": "Electrochemistry",
+      "raw_pages": 30,
+      "structured_items": 511,
+      "chunks_created": 276,
+      "low_text_pages": [],
+      "ocr_fallback": "not_required"
+    },
+    {
+      "source_pdf": "chemistry/lech103.pdf",
+      "book_name": "Chemistry Part I Textbook for Class XII",
+      "chapter_number": "3",
+      "chapter_name": "Chemical Kinetics",
+      "raw_pages": 28,
+      "structured_items": 497,
+      "chunks_created": 354,
+      "low_text_pages": [],
+      "ocr_fallback": "not_required"
+    },
+    {
+      "source_pdf": "chemistry/lech104.pdf",
+      "book_name": "Chemistry Part I Textbook for Class XII",
+      "chapter_number": "4",
+      "chapter_name": "The d- and f-Block Elements",
+      "raw_pages": 29,
+      "structured_items": 419,
+      "chunks_created": 119,
+      "low_text_pages": [],
+      "ocr_fallback": "not_required"
+    },
+    {
+      "source_pdf": "chemistry/lech105.pdf",
+      "book_name": "Chemistry Part I Textbook for Class XII",
+      "chapter_number": "5",
+      "chapter_name": "Coordination Compounds",
+      "raw_pages": 23,
+      "structured_items": 312,
+      "chunks_created": 152,
+      "low_text_pages": [],
+      "ocr_fallback": "not_required"
+    },
+    {
+      "source_pdf": "chemistry/lech1a1.pdf",
+      "book_name": "Chemistry Part I Textbook for Class XII",
+      "chapter_number": "A1",
+      "chapter_name": "Appendix: Atomic Masses and Element Symbols",
+      "raw_pages": 13,
+      "structured_items": 231,
+      "chunks_created": 112,
+      "low_text_pages": [],
+      "ocr_fallback": "not_required"
+    },
+    {
+      "source_pdf": "chemistry/lech1an.pdf",
+      "book_name": "Chemistry Part I Textbook for Class XII",
+      "chapter_number": "ANS-I",
+      "chapter_name": "Answers: Chemistry Part I",
+      "raw_pages": 5,
+      "structured_items": 101,
+      "chunks_created": 30,
+      "low_text_pages": [],
+      "ocr_fallback": "not_required"
+    },
+    {
+      "source_pdf": "chemistry/lech1ps.pdf",
+      "book_name": "Chemistry Part I Textbook for Class XII",
+      "chapter_number": "FM-I",
+      "chapter_name": "Front Matter: Chemistry Part I",
+      "raw_pages": 14,
+      "structured_items": 138,
+      "chunks_created": 95,
+      "low_text_pages": [
+        1,
+        6,
+        12
+      ],
+      "ocr_fallback": "not_available_locally"
+    },
+    {
+      "source_pdf": "chemistry_2/lech201.pdf",
+      "book_name": "Chemistry Part II Textbook for Class XII",
+      "chapter_number": "6",
+      "chapter_name": "Haloalkanes and Haloarenes",
+      "raw_pages": 34,
+      "structured_items": 289,
+      "chunks_created": 117,
+      "low_text_pages": [],
+      "ocr_fallback": "not_required"
+    },
+    {
+      "source_pdf": "chemistry_2/lech202.pdf",
+      "book_name": "Chemistry Part II Textbook for Class XII",
+      "chapter_number": "7",
+      "chapter_name": "Alcohols, Phenols and Ethers",
+      "raw_pages": 34,
+      "structured_items": 424,
+      "chunks_created": 129,
+      "low_text_pages": [],
+      "ocr_fallback": "not_required"
+    },
+    {
+      "source_pdf": "chemistry_2/lech203.pdf",
+      "book_name": "Chemistry Part II Textbook for Class XII",
+      "chapter_number": "8",
+      "chapter_name": "Aldehydes, Ketones and Carboxylic Acids",
+      "raw_pages": 32,
+      "structured_items": 286,
+      "chunks_created": 110,
+      "low_text_pages": [],
+      "ocr_fallback": "not_required"
+    },
+    {
+      "source_pdf": "chemistry_2/lech204.pdf",
+      "book_name": "Chemistry Part II Textbook for Class XII",
+      "chapter_number": "9",
+      "chapter_name": "Amines",
+      "raw_pages": 22,
+      "structured_items": 292,
+      "chunks_created": 123,
+      "low_text_pages": [],
+      "ocr_fallback": "not_required"
+    },
+    {
+      "source_pdf": "chemistry_2/lech205.pdf",
+      "book_name": "Chemistry Part II Textbook for Class XII",
+      "chapter_number": "10",
+      "chapter_name": "Biomolecules",
+      "raw_pages": 22,
+      "structured_items": 292,
+      "chunks_created": 132,
+      "low_text_pages": [],
+      "ocr_fallback": "not_required"
+    },
+    {
+      "source_pdf": "chemistry_2/lech2an.pdf",
+      "book_name": "Chemistry Part II Textbook for Class XII",
+      "chapter_number": "ANS-II",
+      "chapter_name": "Answers: Chemistry Part II",
+      "raw_pages": 6,
+      "structured_items": 78,
+      "chunks_created": 22,
+      "low_text_pages": [],
+      "ocr_fallback": "not_required"
+    },
+    {
+      "source_pdf": "chemistry_2/lech2ps.pdf",
+      "book_name": "Chemistry Part II Textbook for Class XII",
+      "chapter_number": "FM-II",
+      "chapter_name": "Front Matter: Chemistry Part II",
+      "raw_pages": 14,
+      "structured_items": 158,
+      "chunks_created": 102,
+      "low_text_pages": [
+        1,
+        6
+      ],
+      "ocr_fallback": "not_available_locally"
+    },
+    {
+      "source_pdf": "physics_2/leph101.pdf",
+      "book_name": "Physics Part I Textbook for Class XII",
+      "chapter_number": "1",
+      "chapter_name": "Electric Charges and Fields",
+      "raw_pages": 44,
+      "structured_items": 439,
+      "chunks_created": 323,
+      "low_text_pages": [],
+      "ocr_fallback": "not_required"
+    },
+    {
+      "source_pdf": "physics_2/leph102.pdf",
+      "book_name": "Physics Part I Textbook for Class XII",
+      "chapter_number": "2",
+      "chapter_name": "Electrostatic Potential and Capacitance",
+      "raw_pages": 36,
+      "structured_items": 475,
+      "chunks_created": 321,
+      "low_text_pages": [],
+      "ocr_fallback": "not_required"
+    },
+    {
+      "source_pdf": "physics_2/leph103.pdf",
+      "book_name": "Physics Part I Textbook for Class XII",
+      "chapter_number": "3",
+      "chapter_name": "Current Electricity",
+      "raw_pages": 26,
+      "structured_items": 318,
+      "chunks_created": 254,
+      "low_text_pages": [],
+      "ocr_fallback": "not_required"
+    },
+    {
+      "source_pdf": "physics_2/leph104.pdf",
+      "book_name": "Physics Part I Textbook for Class XII",
+      "chapter_number": "4",
+      "chapter_name": "Moving Charges and Magnetism",
+      "raw_pages": 29,
+      "structured_items": 284,
+      "chunks_created": 213,
+      "low_text_pages": [],
+      "ocr_fallback": "not_required"
+    },
+    {
+      "source_pdf": "physics_2/leph105.pdf",
+      "book_name": "Physics Part I Textbook for Class XII",
+      "chapter_number": "5",
+      "chapter_name": "Magnetism and Matter",
+      "raw_pages": 18,
+      "structured_items": 182,
+      "chunks_created": 141,
+      "low_text_pages": [],
+      "ocr_fallback": "not_required"
+    },
+    {
+      "source_pdf": "physics_2/leph106.pdf",
+      "book_name": "Physics Part I Textbook for Class XII",
+      "chapter_number": "6",
+      "chapter_name": "Electromagnetic Induction",
+      "raw_pages": 23,
+      "structured_items": 224,
+      "chunks_created": 172,
+      "low_text_pages": [],
+      "ocr_fallback": "not_required"
+    },
+    {
+      "source_pdf": "physics_2/leph107.pdf",
+      "book_name": "Physics Part I Textbook for Class XII",
+      "chapter_number": "7",
+      "chapter_name": "Alternating Current",
+      "raw_pages": 24,
+      "structured_items": 391,
+      "chunks_created": 289,
+      "low_text_pages": [],
+      "ocr_fallback": "not_required"
+    },
+    {
+      "source_pdf": "physics_2/leph108.pdf",
+      "book_name": "Physics Part I Textbook for Class XII",
+      "chapter_number": "8",
+      "chapter_name": "Electromagnetic Waves",
+      "raw_pages": 14,
+      "structured_items": 143,
+      "chunks_created": 109,
+      "low_text_pages": [],
+      "ocr_fallback": "not_required"
+    },
+    {
+      "source_pdf": "physics_2/leph1an.pdf",
+      "book_name": "Physics Part I Textbook for Class XII",
+      "chapter_number": "ANS-I",
+      "chapter_name": "Answers: Physics Part I",
+      "raw_pages": 6,
+      "structured_items": 101,
+      "chunks_created": 55,
+      "low_text_pages": [],
+      "ocr_fallback": "not_required"
+    },
+    {
+      "source_pdf": "physics_2/leph1ps.pdf",
+      "book_name": "Physics Part I Textbook for Class XII",
+      "chapter_number": "FM-I",
+      "chapter_name": "Front Matter: Physics Part I",
+      "raw_pages": 16,
+      "structured_items": 128,
+      "chunks_created": 112,
+      "low_text_pages": [
+        4,
+        6
+      ],
+      "ocr_fallback": "not_available_locally"
+    },
+    {
+      "source_pdf": "physics_3/leph201.pdf",
+      "book_name": "Physics Part II Textbook for Class XII",
+      "chapter_number": "9",
+      "chapter_name": "Ray Optics and Optical Instruments",
+      "raw_pages": 34,
+      "structured_items": 419,
+      "chunks_created": 308,
+      "low_text_pages": [],
+      "ocr_fallback": "not_required"
+    },
+    {
+      "source_pdf": "physics_3/leph202.pdf",
+      "book_name": "Physics Part II Textbook for Class XII",
+      "chapter_number": "10",
+      "chapter_name": "Wave Optics",
+      "raw_pages": 19,
+      "structured_items": 188,
+      "chunks_created": 133,
+      "low_text_pages": [],
+      "ocr_fallback": "not_required"
+    },
+    {
+      "source_pdf": "physics_3/leph203.pdf",
+      "book_name": "Physics Part II Textbook for Class XII",
+      "chapter_number": "11",
+      "chapter_name": "Dual Nature of Radiation and Matter",
+      "raw_pages": 16,
+      "structured_items": 119,
+      "chunks_created": 91,
+      "low_text_pages": [],
+      "ocr_fallback": "not_required"
+    },
+    {
+      "source_pdf": "physics_3/leph204.pdf",
+      "book_name": "Physics Part II Textbook for Class XII",
+      "chapter_number": "12",
+      "chapter_name": "Atoms",
+      "raw_pages": 16,
+      "structured_items": 115,
+      "chunks_created": 77,
+      "low_text_pages": [],
+      "ocr_fallback": "not_required"
+    },
+    {
+      "source_pdf": "physics_3/leph205.pdf",
+      "book_name": "Physics Part II Textbook for Class XII",
+      "chapter_number": "13",
+      "chapter_name": "Nuclei",
+      "raw_pages": 17,
+      "structured_items": 156,
+      "chunks_created": 111,
+      "low_text_pages": [],
+      "ocr_fallback": "not_required"
+    },
+    {
+      "source_pdf": "physics_3/leph206.pdf",
+      "book_name": "Physics Part II Textbook for Class XII",
+      "chapter_number": "14",
+      "chapter_name": "Semiconductor Electronics: Materials, Devices and Simple Circuits",
+      "raw_pages": 21,
+      "structured_items": 125,
+      "chunks_created": 81,
+      "low_text_pages": [],
+      "ocr_fallback": "not_required"
+    },
+    {
+      "source_pdf": "physics_3/leph2an.pdf",
+      "book_name": "Physics Part II Textbook for Class XII",
+      "chapter_number": "ANS-II",
+      "chapter_name": "Answers and Appendices: Physics Part II",
+      "raw_pages": 11,
+      "structured_items": 127,
+      "chunks_created": 63,
+      "low_text_pages": [],
+      "ocr_fallback": "not_required"
+    },
+    {
+      "source_pdf": "physics_3/leph2ps.pdf",
+      "book_name": "Physics Part II Textbook for Class XII",
+      "chapter_number": "FM-II",
+      "chapter_name": "Front Matter: Physics Part II",
+      "raw_pages": 18,
+      "structured_items": 164,
+      "chunks_created": 96,
+      "low_text_pages": [
+        2,
+        6,
+        8
+      ],
+      "ocr_fallback": "not_available_locally"
+    }
+  ],
+  "validation_errors": [],
+  "validation_warnings": [],
+  "vector_databases_ignored": [
+    "vector_db",
+    "vector_db_eng_hornbill",
+    "vector_db_science_book"
+  ],
+  "embeddings_created": false,
+  "vector_database_created": false
+}

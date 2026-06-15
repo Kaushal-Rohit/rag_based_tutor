@@ -1,0 +1,474 @@
+{
+  "generated_at": "2026-06-14T12:57:33",
+  "previous_project": {
+    "path": "RAG-Enhanced-NCERT-Tutor-main",
+    "files_analyzed_count": 31,
+    "old_project_pdfs": [
+      {
+        "file_name": "NCERT-Class-12-Physics-Part-1.pdf",
+        "pages": 291,
+        "toc_items": 0
+      },
+      {
+        "file_name": "NCERT-Class-12-Physics-Part-2.pdf",
+        "pages": 254,
+        "toc_items": 0
+      }
+    ],
+    "chunking_strategy": {
+      "library": "langchain RecursiveCharacterTextSplitter",
+      "chunk_size_characters": 1800,
+      "chunk_overlap_characters": 200,
+      "scope": "per extracted PDF page",
+      "metadata": [
+        "source",
+        "page"
+      ],
+      "structure_preserved": false
+    },
+    "application_summary": {
+      "app.py": {
+        "role": "FastAPI retrieval endpoint",
+        "uses_vector_db": true,
+        "llm": "Groq ChatGroq",
+        "embedding_model": "Ollama nomic-embed-text"
+      },
+      "streamlit_app.py": {
+        "role": "Streamlit frontend calling FastAPI /ask",
+        "contains_dataset_logic": false
+      },
+      "evaluation_script.py": {
+        "role": "RAG evaluation metrics and generation script",
+        "uses_vector_db": true,
+        "metrics": [
+          "precision@k",
+          "recall@k",
+          "MRR",
+          "NDCG",
+          "ROUGE-L",
+          "BLEU",
+          "BERTScore",
+          "exact match",
+          "F1"
+        ]
+      },
+      "eval.ipynb": {
+        "role": "Notebook version of evaluation workflow",
+        "uses_vector_db": true
+      }
+    }
+  },
+  "csv_datasets": [
+    {
+      "source_file": "RAG-Enhanced-NCERT-Tutor-main\\eng_book.csv",
+      "file_name": "eng_book.csv",
+      "encoding": "cp1252",
+      "row_count": 141,
+      "columns": [
+        "Question",
+        "Answer"
+      ],
+      "non_null": {
+        "Question": 141,
+        "Answer": 141
+      },
+      "book_name": "Hornbill",
+      "class": "11",
+      "subject": "English",
+      "chapter": "Multiple Hornbill prose and poetry chapters",
+      "chapter_number": "",
+      "usable": true,
+      "usable_as": "qa_pairs",
+      "reason": "Question/Answer CSV with clean row coverage"
+    },
+    {
+      "source_file": "RAG-Enhanced-NCERT-Tutor-main\\science_book_ques.csv",
+      "file_name": "science_book_ques.csv",
+      "encoding": "utf-8-sig",
+      "row_count": 109,
+      "columns": [
+        "Question",
+        "Answer"
+      ],
+      "non_null": {
+        "Question": 109,
+        "Answer": 109
+      },
+      "book_name": "Science",
+      "class": "9",
+      "subject": "Science",
+      "chapter": "Matter in Our Surroundings",
+      "chapter_number": "1",
+      "usable": true,
+      "usable_as": "qa_pairs",
+      "reason": "Question/Answer CSV with clean row coverage"
+    }
+  ],
+  "vector_databases": [
+    {
+      "folder": "vector_db",
+      "path": "RAG-Enhanced-NCERT-Tutor-main\\vector_db\\chroma.sqlite3",
+      "exists": true,
+      "ignored_for_final_dataset": true,
+      "reason_ignored": "Existing vector database/embedding store; not copied or reused.",
+      "size_bytes": 8941568,
+      "tables": [
+        "collection_metadata",
+        "collections",
+        "databases",
+        "embedding_fulltext_search",
+        "embedding_fulltext_search_config",
+        "embedding_fulltext_search_content",
+        "embedding_fulltext_search_data",
+        "embedding_fulltext_search_docsize",
+        "embedding_fulltext_search_idx",
+        "embedding_metadata",
+        "embeddings",
+        "embeddings_queue",
+        "embeddings_queue_config",
+        "maintenance_log",
+        "max_seq_id",
+        "migrations",
+        "segment_metadata",
+        "segments",
+        "tenants"
+      ],
+      "table_counts": {
+        "collection_metadata": 0,
+        "collections": 1,
+        "databases": 1,
+        "embedding_fulltext_search": 506,
+        "embedding_fulltext_search_config": 1,
+        "embedding_fulltext_search_content": 506,
+        "embedding_fulltext_search_data": 491,
+        "embedding_fulltext_search_docsize": 506,
+        "embedding_fulltext_search_idx": 485,
+        "embedding_metadata": 1518,
+        "embeddings": 506,
+        "embeddings_queue": 506,
+        "embeddings_queue_config": 1,
+        "maintenance_log": 0,
+        "max_seq_id": 1,
+        "migrations": 15,
+        "segment_metadata": 0,
+        "segments": 2,
+        "tenants": 1
+      },
+      "embedding_dimensions": [
+        768
+      ],
+      "document_count": 506,
+      "raw_text_present_in_metadata": true,
+      "source_distribution": {
+        "NCERT-Class-12-Physics-Part-1.pdf": 506
+      },
+      "page_ranges": {
+        "NCERT-Class-12-Physics-Part-1.pdf": {
+          "page_min": 1,
+          "page_max": 291,
+          "unique_pages": 291
+        }
+      },
+      "document_char_stats": {
+        "min": 3,
+        "max": 1800,
+        "avg": 1344.88
+      }
+    },
+    {
+      "folder": "vector_db_eng_hornbill",
+      "path": "RAG-Enhanced-NCERT-Tutor-main\\vector_db_eng_hornbill\\chroma.sqlite3",
+      "exists": true,
+      "ignored_for_final_dataset": true,
+      "reason_ignored": "Existing vector database/embedding store; not copied or reused.",
+      "size_bytes": 2744320,
+      "tables": [
+        "collection_metadata",
+        "collections",
+        "databases",
+        "embedding_fulltext_search",
+        "embedding_fulltext_search_config",
+        "embedding_fulltext_search_content",
+        "embedding_fulltext_search_data",
+        "embedding_fulltext_search_docsize",
+        "embedding_fulltext_search_idx",
+        "embedding_metadata",
+        "embeddings",
+        "embeddings_queue",
+        "embeddings_queue_config",
+        "maintenance_log",
+        "max_seq_id",
+        "migrations",
+        "segment_metadata",
+        "segments",
+        "tenants"
+      ],
+      "table_counts": {
+        "collection_metadata": 0,
+        "collections": 1,
+        "databases": 1,
+        "embedding_fulltext_search": 166,
+        "embedding_fulltext_search_config": 1,
+        "embedding_fulltext_search_content": 166,
+        "embedding_fulltext_search_data": 149,
+        "embedding_fulltext_search_docsize": 166,
+        "embedding_fulltext_search_idx": 147,
+        "embedding_metadata": 498,
+        "embeddings": 166,
+        "embeddings_queue": 166,
+        "embeddings_queue_config": 1,
+        "maintenance_log": 0,
+        "max_seq_id": 1,
+        "migrations": 15,
+        "segment_metadata": 0,
+        "segments": 2,
+        "tenants": 1
+      },
+      "embedding_dimensions": [
+        768
+      ],
+      "document_count": 166,
+      "raw_text_present_in_metadata": true,
+      "source_distribution": {
+        "class11_eng_hornbill/kehb101.pdf": 15,
+        "class11_eng_hornbill/kehb102.pdf": 14,
+        "class11_eng_hornbill/kehb103.pdf": 18,
+        "class11_eng_hornbill/kehb104.pdf": 13,
+        "class11_eng_hornbill/kehb105.pdf": 24,
+        "class11_eng_hornbill/kehb106.pdf": 21,
+        "class11_eng_hornbill/kehb111.pdf": 9,
+        "class11_eng_hornbill/kehb112.pdf": 8,
+        "class11_eng_hornbill/kehb113.pdf": 7,
+        "class11_eng_hornbill/kehb114.pdf": 8,
+        "class11_eng_hornbill/kehb115.pdf": 9,
+        "class11_eng_hornbill/kehb116.pdf": 4,
+        "class11_eng_hornbill/kehb1ps.pdf": 16
+      },
+      "page_ranges": {
+        "class11_eng_hornbill/kehb101.pdf": {
+          "page_min": 1,
+          "page_max": 12,
+          "unique_pages": 12
+        },
+        "class11_eng_hornbill/kehb102.pdf": {
+          "page_min": 1,
+          "page_max": 9,
+          "unique_pages": 9
+        },
+        "class11_eng_hornbill/kehb103.pdf": {
+          "page_min": 1,
+          "page_max": 14,
+          "unique_pages": 14
+        },
+        "class11_eng_hornbill/kehb104.pdf": {
+          "page_min": 1,
+          "page_max": 9,
+          "unique_pages": 9
+        },
+        "class11_eng_hornbill/kehb105.pdf": {
+          "page_min": 1,
+          "page_max": 14,
+          "unique_pages": 14
+        },
+        "class11_eng_hornbill/kehb106.pdf": {
+          "page_min": 1,
+          "page_max": 14,
+          "unique_pages": 14
+        },
+        "class11_eng_hornbill/kehb111.pdf": {
+          "page_min": 1,
+          "page_max": 7,
+          "unique_pages": 7
+        },
+        "class11_eng_hornbill/kehb112.pdf": {
+          "page_min": 1,
+          "page_max": 5,
+          "unique_pages": 5
+        },
+        "class11_eng_hornbill/kehb113.pdf": {
+          "page_min": 1,
+          "page_max": 3,
+          "unique_pages": 3
+        },
+        "class11_eng_hornbill/kehb114.pdf": {
+          "page_min": 1,
+          "page_max": 5,
+          "unique_pages": 5
+        },
+        "class11_eng_hornbill/kehb115.pdf": {
+          "page_min": 1,
+          "page_max": 9,
+          "unique_pages": 9
+        },
+        "class11_eng_hornbill/kehb116.pdf": {
+          "page_min": 1,
+          "page_max": 3,
+          "unique_pages": 3
+        },
+        "class11_eng_hornbill/kehb1ps.pdf": {
+          "page_min": 1,
+          "page_max": 12,
+          "unique_pages": 12
+        }
+      },
+      "document_char_stats": {
+        "min": 7,
+        "max": 1500,
+        "avg": 1047.64
+      }
+    },
+    {
+      "folder": "vector_db_science_book",
+      "path": "RAG-Enhanced-NCERT-Tutor-main\\vector_db_science_book\\chroma.sqlite3",
+      "exists": true,
+      "ignored_for_final_dataset": true,
+      "reason_ignored": "Existing vector database/embedding store; not copied or reused.",
+      "size_bytes": 5218304,
+      "tables": [
+        "collection_metadata",
+        "collections",
+        "databases",
+        "embedding_fulltext_search",
+        "embedding_fulltext_search_config",
+        "embedding_fulltext_search_content",
+        "embedding_fulltext_search_data",
+        "embedding_fulltext_search_docsize",
+        "embedding_fulltext_search_idx",
+        "embedding_metadata",
+        "embeddings",
+        "embeddings_queue",
+        "embeddings_queue_config",
+        "maintenance_log",
+        "max_seq_id",
+        "migrations",
+        "segment_metadata",
+        "segments",
+        "tenants"
+      ],
+      "table_counts": {
+        "collection_metadata": 0,
+        "collections": 1,
+        "databases": 1,
+        "embedding_fulltext_search": 299,
+        "embedding_fulltext_search_config": 1,
+        "embedding_fulltext_search_content": 299,
+        "embedding_fulltext_search_data": 306,
+        "embedding_fulltext_search_docsize": 299,
+        "embedding_fulltext_search_idx": 302,
+        "embedding_metadata": 897,
+        "embeddings": 299,
+        "embeddings_queue": 299,
+        "embeddings_queue_config": 1,
+        "maintenance_log": 0,
+        "max_seq_id": 1,
+        "migrations": 15,
+        "segment_metadata": 0,
+        "segments": 2,
+        "tenants": 1
+      },
+      "embedding_dimensions": [
+        768
+      ],
+      "document_count": 299,
+      "raw_text_present_in_metadata": true,
+      "source_distribution": {
+        "D:/rag/rag_app/iesc1dd/iesc101.pdf": 23,
+        "D:/rag/rag_app/iesc1dd/iesc102.pdf": 20,
+        "D:/rag/rag_app/iesc1dd/iesc103.pdf": 21,
+        "D:/rag/rag_app/iesc1dd/iesc104.pdf": 19,
+        "D:/rag/rag_app/iesc1dd/iesc105.pdf": 25,
+        "D:/rag/rag_app/iesc1dd/iesc106.pdf": 22,
+        "D:/rag/rag_app/iesc1dd/iesc107.pdf": 27,
+        "D:/rag/rag_app/iesc1dd/iesc108.pdf": 25,
+        "D:/rag/rag_app/iesc1dd/iesc109.pdf": 25,
+        "D:/rag/rag_app/iesc1dd/iesc1an.pdf": 3,
+        "D:/rag/rag_app/iesc1dd/iesc1ps.pdf": 13,
+        "D:/rag/rag_app/iesc1dd/iesc110.pdf": 25,
+        "D:/rag/rag_app/iesc1dd/iesc111.pdf": 26,
+        "D:/rag/rag_app/iesc1dd/iesc112.pdf": 25
+      },
+      "page_ranges": {
+        "D:/rag/rag_app/iesc1dd/iesc101.pdf": {
+          "page_min": 1,
+          "page_max": 13,
+          "unique_pages": 13
+        },
+        "D:/rag/rag_app/iesc1dd/iesc102.pdf": {
+          "page_min": 1,
+          "page_max": 12,
+          "unique_pages": 12
+        },
+        "D:/rag/rag_app/iesc1dd/iesc103.pdf": {
+          "page_min": 1,
+          "page_max": 12,
+          "unique_pages": 12
+        },
+        "D:/rag/rag_app/iesc1dd/iesc104.pdf": {
+          "page_min": 1,
+          "page_max": 11,
+          "unique_pages": 11
+        },
+        "D:/rag/rag_app/iesc1dd/iesc105.pdf": {
+          "page_min": 1,
+          "page_max": 11,
+          "unique_pages": 11
+        },
+        "D:/rag/rag_app/iesc1dd/iesc106.pdf": {
+          "page_min": 1,
+          "page_max": 12,
+          "unique_pages": 12
+        },
+        "D:/rag/rag_app/iesc1dd/iesc107.pdf": {
+          "page_min": 1,
+          "page_max": 15,
+          "unique_pages": 15
+        },
+        "D:/rag/rag_app/iesc1dd/iesc108.pdf": {
+          "page_min": 1,
+          "page_max": 13,
+          "unique_pages": 13
+        },
+        "D:/rag/rag_app/iesc1dd/iesc109.pdf": {
+          "page_min": 1,
+          "page_max": 13,
+          "unique_pages": 13
+        },
+        "D:/rag/rag_app/iesc1dd/iesc1an.pdf": {
+          "page_min": 1,
+          "page_max": 3,
+          "unique_pages": 3
+        },
+        "D:/rag/rag_app/iesc1dd/iesc1ps.pdf": {
+          "page_min": 1,
+          "page_max": 10,
+          "unique_pages": 10
+        },
+        "D:/rag/rag_app/iesc1dd/iesc110.pdf": {
+          "page_min": 1,
+          "page_max": 14,
+          "unique_pages": 14
+        },
+        "D:/rag/rag_app/iesc1dd/iesc111.pdf": {
+          "page_min": 1,
+          "page_max": 14,
+          "unique_pages": 14
+        },
+        "D:/rag/rag_app/iesc1dd/iesc112.pdf": {
+          "page_min": 1,
+          "page_max": 12,
+          "unique_pages": 12
+        }
+      },
+      "document_char_stats": {
+        "min": 7,
+        "max": 1800,
+        "avg": 1338.94
+      }
+    }
+  ],
+  "reuse_policy": {
+    "csv_reuse": "Reusable only as structured QA pairs when Question and Answer columns are clean.",
+    "vector_db_reuse": "Not reused. Vector folders are embedding stores and are excluded from final dataset outputs.",
+    "old_pdf_reuse": "Old project PDFs are analyzed for provenance only; requested extraction sources are the four source folders."
+  }
+}

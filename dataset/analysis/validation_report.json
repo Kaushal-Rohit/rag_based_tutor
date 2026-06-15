@@ -1,0 +1,27 @@
+{
+  "total_chunk_files": 35,
+  "total_chunks": 5388,
+  "errors": [],
+  "warnings": [],
+  "chunks_by_type": {
+    "answer": 13,
+    "definition": 179,
+    "diagram_reference": 356,
+    "equation": 33,
+    "example": 288,
+    "exercise": 557,
+    "formula": 1536,
+    "front_matter": 370,
+    "qa_pair": 250,
+    "question": 10,
+    "summary": 302,
+    "table": 57,
+    "theory": 1437
+  },
+  "chunks_by_subject": {
+    "Chemistry": 2189,
+    "English": 141,
+    "Physics": 2949,
+    "Science": 109
+  }
+}
