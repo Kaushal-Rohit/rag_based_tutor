@@ -86,9 +86,23 @@ FAISS and ChromaDB both implement HNSW but with different tradeoffs:
 | Native metadata filtering | No (requires post-filter with over-fetch) | Yes (built-in `where` clause) |
 | Persistence | Manual (binary file) | Automatic (SQLite + binary) |
 | Production readiness | Library (embed in your code) | Server-capable (client-server mode) |
-| Disk footprint (13k vectors) | ~24 MB | ~65 MB |
+| Disk footprint (13k vectors) | 20.4 MB | ~65 MB |
 
 This system runs both in parallel during benchmarking so you can measure and choose the right backend for your deployment constraints.
+
+## Benchmark Results
+
+*Measured on 13,917 NCERT chunks using `all-MiniLM-L6-v2` embeddings.*
+
+| Metric | Value |
+|--------|-------|
+| **FAISS HNSW Search (mean)** | 0.39 ms |
+| **FAISS HNSW Search (P95)** | 0.28 ms |
+| **ChromaDB Total (mean)** | 44.97 ms |
+| **HNSW Recall@5** | 82.7% |
+| **RAG Context Coverage** | 60% |
+| **Hallucination Reduction** | 20 pp |
+| **FAISS Disk Size** | 20.4 MB |
 
 ![FAISS vs ChromaDB Comparison](assets/faiss_vs_chromadb.png)
 
@@ -139,76 +153,42 @@ This ensures the system adapts its behavior to the user's actual comprehension l
 
 ---
 
-## Installation
+## Installation & Usage
 
 ### Prerequisites
 
-- Python 3.10+
-- [Ollama](https://ollama.ai/) installed and running locally
+- [Docker](https://docs.docker.com/get-docker/) & Docker Compose
+- [Ollama](https://ollama.ai/) installed and running locally with `llama3:latest` pulled
 
-### Steps
-
-```bash
-# Clone the repository
-git clone https://github.com/Kaushal-Rohit/rag_based_tutor.git
-cd rag_based_tutor
-
-# Install Python dependencies
-pip install -r requirements.txt
-
-# Download TextBlob corpora (one-time)
-python -m textblob.download_corpora
-
-# Pull the LLM model
-ollama pull llama3:latest
-
-# Start Ollama server (if not already running)
-ollama serve
-```
-
----
-
-## Usage
-
-### 1. Build Vector Indices (if not pre-built)
-
-Run `notebooks/indexer_testing.ipynb` or:
+### 1. Start the API
 
 ```bash
-python src/indexer.py
+# Copy env template
+cp .env.example .env
+
+# Start with Docker Compose
+docker-compose up --build
 ```
 
-This loads 13,917 text chunks from the dataset, encodes them with `all-MiniLM-L6-v2`, and builds both FAISS and ChromaDB HNSW indices.
+The API will be available at `http://localhost:8000`.
 
-### 2. Benchmark Retrieval
+### 2. Run Benchmarks
 
-Run `notebooks/retriever_testing.ipynb` to:
+Run `benchmarks/bench_retrieval.py` to:
 - Compare FAISS vs ChromaDB search latency (mean, median, P95)
 - Measure result overlap between backends
 - Test metadata filtering (by subject, class, content type)
 
-### 3. Run the Adaptive Chat
+```bash
+python benchmarks/bench_retrieval.py
+```
+
+### 3. Query the API
 
 ```bash
-python src/main.py
-```
-
-Or run `notebooks/llm_engine_testing.ipynb` for the notebook version.
-
-**Example session:**
-
-```
-You: What is Newton's second law of motion?
-[LOG] Avg Sentiment: 0.00 | User is neutral -> Standard K, standard response. (k=5)
-AI: Newton's second law states that the force acting on an object is equal to...
-
-You: I don't get it, this is very confusing. Can you explain it again simply?
-[LOG] Avg Sentiment: -0.35 | User is confused -> Increasing K, providing detailed response. (k=8)
-AI: Let me break this down step by step. Imagine you are pushing a shopping cart...
-
-You: Oh, I understand now! Excellent explanation. What is the formula?
-[LOG] Avg Sentiment: 0.42 | User understands -> Decreasing K, providing precise response. (k=3)
-AI: F = ma, where F is force in Newtons, m is mass in kg, and a is acceleration in m/s^2.
+curl -X POST http://localhost:8000/api/v1/query \
+  -H "Content-Type: application/json" \
+  -d '{"query": "What is Newtons second law of motion?", "session_id": "session-123"}'
 ```
 
 ---

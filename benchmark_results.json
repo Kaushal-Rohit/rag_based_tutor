@@ -1,0 +1,213 @@
+{
+  "benchmark_metadata": {
+    "total_vectors": 13917,
+    "embedding_model": "all-MiniLM-L6-v2",
+    "embedding_dim": 384,
+    "faiss_index_type": "IndexHNSWFlat (M=32)",
+    "chromadb_space": "cosine",
+    "num_queries": 15,
+    "num_runs_per_query": 5,
+    "k": 5,
+    "timestamp": "2026-06-16 21:34:29"
+  },
+  "key_metrics": {
+    "faiss_hnsw_search_latency_mean_ms": 0.237,
+    "faiss_hnsw_search_latency_median_ms": 0.193,
+    "faiss_hnsw_search_latency_p95_ms": 0.295,
+    "faiss_total_latency_mean_ms": 0.286,
+    "chroma_total_latency_mean_ms": 30.277,
+    "embedding_latency_mean_ms": 28.173,
+    "embedding_latency_median_ms": 18.557,
+    "hnsw_recall_at_k": 82.7,
+    "faiss_vs_chroma_result_overlap_pct": 67.4,
+    "rag_context_coverage_pct": 60.0,
+    "no_rag_baseline_coverage_pct": 40.0,
+    "hallucination_rate_reduction_pct_points": 20.0,
+    "faiss_disk_size_mb": 24.0,
+    "chroma_to_faiss_speedup_ratio": 105.68
+  },
+  "per_query_results": [
+    {
+      "query": "Explain Newton's second law of motion",
+      "filters": "None",
+      "faiss_search_mean_ms": 0.588,
+      "faiss_total_mean_ms": 0.636,
+      "chroma_total_mean_ms": 3.619,
+      "overlap_pct": 25.0
+    },
+    {
+      "query": "What is electromagnetic induction?",
+      "filters": "{'subject': 'Physics'}",
+      "faiss_search_mean_ms": 0.185,
+      "faiss_total_mean_ms": 0.22,
+      "chroma_total_mean_ms": 53.814,
+      "overlap_pct": 25.0
+    },
+    {
+      "query": "Derive the expression for electric field due to a dipole",
+      "filters": "{'subject': 'Physics', 'class': '12'}",
+      "faiss_search_mean_ms": 0.19,
+      "faiss_total_mean_ms": 0.234,
+      "chroma_total_mean_ms": 96.848,
+      "overlap_pct": 100.0
+    },
+    {
+      "query": "What are the colligative properties of solutions?",
+      "filters": "None",
+      "faiss_search_mean_ms": 0.24,
+      "faiss_total_mean_ms": 0.291,
+      "chroma_total_mean_ms": 5.181,
+      "overlap_pct": 100.0
+    },
+    {
+      "query": "Explain the band theory of solids",
+      "filters": "{'subject': 'Chemistry'}",
+      "faiss_search_mean_ms": 0.399,
+      "faiss_total_mean_ms": 0.54,
+      "chroma_total_mean_ms": 56.821,
+      "overlap_pct": 100.0
+    },
+    {
+      "query": "What is electrochemistry?",
+      "filters": "{'subject': 'Chemistry', 'class': '12'}",
+      "faiss_search_mean_ms": 0.166,
+      "faiss_total_mean_ms": 0.195,
+      "chroma_total_mean_ms": 74.156,
+      "overlap_pct": 100.0
+    },
+    {
+      "query": "Describe the portrait of the grandmother",
+      "filters": "{'subject': 'English'}",
+      "faiss_search_mean_ms": 0.222,
+      "faiss_total_mean_ms": 0.248,
+      "chroma_total_mean_ms": 11.144,
+      "overlap_pct": 100.0
+    },
+    {
+      "query": "What is the central theme of the poem?",
+      "filters": "None",
+      "faiss_search_mean_ms": 0.183,
+      "faiss_total_mean_ms": 0.198,
+      "chroma_total_mean_ms": 2.831,
+      "overlap_pct": 100.0
+    },
+    {
+      "query": "What is the structure of an atom?",
+      "filters": "{'subject': 'Science'}",
+      "faiss_search_mean_ms": 0.196,
+      "faiss_total_mean_ms": 0.297,
+      "chroma_total_mean_ms": 15.604,
+      "overlap_pct": 0.0
+    },
+    {
+      "query": "Describe the classification of living organisms",
+      "filters": "None",
+      "faiss_search_mean_ms": 0.206,
+      "faiss_total_mean_ms": 0.222,
+      "chroma_total_mean_ms": 2.594,
+      "overlap_pct": 66.7
+    },
+    {
+      "query": "Define Ohm's law",
+      "filters": "{'content_type': 'definition'}",
+      "faiss_search_mean_ms": 0.187,
+      "faiss_total_mean_ms": 0.254,
+      "chroma_total_mean_ms": 12.361,
+      "overlap_pct": 100.0
+    },
+    {
+      "query": "Solve the numerical problem on resistance",
+      "filters": "{'content_type': 'exercise'}",
+      "faiss_search_mean_ms": 0.249,
+      "faiss_total_mean_ms": 0.34,
+      "chroma_total_mean_ms": 8.992,
+      "overlap_pct": 60.0
+    },
+    {
+      "query": "What is the difference between speed and velocity?",
+      "filters": "None",
+      "faiss_search_mean_ms": 0.159,
+      "faiss_total_mean_ms": 0.174,
+      "chroma_total_mean_ms": 2.803,
+      "overlap_pct": 66.7
+    },
+    {
+      "query": "State Faraday's laws of electromagnetic induction",
+      "filters": "{'subject': 'Physics', 'class': '12'}",
+      "faiss_search_mean_ms": 0.139,
+      "faiss_total_mean_ms": 0.165,
+      "chroma_total_mean_ms": 67.892,
+      "overlap_pct": 25.0
+    },
+    {
+      "query": "Explain Le Chatelier's principle",
+      "filters": "{'subject': 'Chemistry'}",
+      "faiss_search_mean_ms": 0.242,
+      "faiss_total_mean_ms": 0.283,
+      "chroma_total_mean_ms": 39.497,
+      "overlap_pct": 42.9
+    }
+  ],
+  "recall_per_query": [
+    {
+      "query": "Explain Newton's second law of motion",
+      "recall_at_k": 100.0
+    },
+    {
+      "query": "What is electromagnetic induction?",
+      "recall_at_k": 20.0
+    },
+    {
+      "query": "Derive the expression for electric field due to a dipole",
+      "recall_at_k": 100.0
+    },
+    {
+      "query": "What are the colligative properties of solutions?",
+      "recall_at_k": 100.0
+    },
+    {
+      "query": "Explain the band theory of solids",
+      "recall_at_k": 100.0
+    },
+    {
+      "query": "What is electrochemistry?",
+      "recall_at_k": 100.0
+    },
+    {
+      "query": "Describe the portrait of the grandmother",
+      "recall_at_k": 100.0
+    },
+    {
+      "query": "What is the central theme of the poem?",
+      "recall_at_k": 100.0
+    },
+    {
+      "query": "What is the structure of an atom?",
+      "recall_at_k": 40.0
+    },
+    {
+      "query": "Describe the classification of living organisms",
+      "recall_at_k": 80.0
+    },
+    {
+      "query": "Define Ohm's law",
+      "recall_at_k": 100.0
+    },
+    {
+      "query": "Solve the numerical problem on resistance",
+      "recall_at_k": 100.0
+    },
+    {
+      "query": "What is the difference between speed and velocity?",
+      "recall_at_k": 80.0
+    },
+    {
+      "query": "State Faraday's laws of electromagnetic induction",
+      "recall_at_k": 40.0
+    },
+    {
+      "query": "Explain Le Chatelier's principle",
+      "recall_at_k": 80.0
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+# ──────────────────────────────────────────────────────────────
+# Adaptive RAG Pipeline — Docker Compose
+# ──────────────────────────────────────────────────────────────
+# Usage:
+#   docker-compose up --build          # Build and start
+#   docker-compose up -d               # Start in background
+#   docker-compose logs -f rag-api     # Follow logs
+#   docker-compose down                # Stop and remove containers
+#
+# Prerequisites:
+#   - Ollama running on the host machine (ollama serve)
+#   - llama3:latest model pulled (ollama pull llama3:latest)
+#   - Pre-built FAISS/ChromaDB indices in notebooks/
+# ──────────────────────────────────────────────────────────────
+
+services:
+  rag-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: rag-api
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    volumes:
+      # Mount pre-built indices (read-only)
+      - ./notebooks/faiss_hnsw_index.bin:/app/data/faiss_hnsw_index.bin:ro
+      - ./notebooks/chroma_db:/app/data/chroma_db:ro
+      # Mount dataset (read-only)
+      - ./dataset:/app/dataset:ro
+      # Mount benchmarks for report (read-only)
+      - ./benchmarks:/app/benchmarks:ro
+      # Persist logs across restarts
+      - rag-logs:/app/logs
+      # Persist user uploads (separate from static dataset)
+      - rag-uploads:/app/uploads
+    extra_hosts:
+      # Allows container to reach host's Ollama instance
+      # Works on Docker Desktop (Windows/Mac).
+      # On Linux, use --network=host or set OLLAMA_BASE_URL to host IP.
+      - "host.docker.internal:host-gateway"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/v1/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s  # Allow time for model loading at startup
+    restart: unless-stopped
+
+volumes:
+  rag-logs:
+    driver: local
+  rag-uploads:
+    driver: local

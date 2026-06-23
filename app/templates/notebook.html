@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Adaptive Notebook — AI-powered study companion with PDF upload, citation-backed answers, and sentiment-driven tutoring.">
+  <title>Adaptive Notebook — RAG Tutor</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="app-container">
+
+  <!-- ── Top Bar ── -->
+  <header class="top-bar">
+    <div class="logo">
+      <div class="logo-icon">📓</div>
+      <span>Adaptive Notebook</span>
+    </div>
+
+    <div class="adaptive-strip">
+      <div class="stat-item">
+        <span class="label">Sentiment</span>
+        <span class="value" id="sentiment-value">0.00</span>
+      </div>
+      <div class="stat-item">
+        <span class="label">State</span>
+        <span class="badge neutral" id="state-badge">neutral</span>
+      </div>
+      <div class="stat-item">
+        <span class="label">k</span>
+        <span class="value" id="k-value">5</span>
+      </div>
+      <div class="stat-item">
+        <a href="/report" style="color: var(--accent-light); text-decoration: none; font-weight: 500;">Architecture Rationale</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── Sidebar: Sources ── -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h2>📚 Sources</h2>
+      <div class="upload-zone" id="upload-zone">
+        <span class="icon">⬆️</span>
+        <span>Drop a PDF here<br>or click to upload</span>
+      </div>
+      <input type="file" id="file-input" accept=".pdf">
+    </div>
+
+    <div class="source-list" id="source-list">
+      <!-- Populated by JS -->
+    </div>
+  </aside>
+
+  <!-- ── Chat Area ── -->
+  <main class="chat-area">
+    <div class="messages-container" id="messages">
+      <div class="welcome-message" id="welcome">
+        <p style="font-size: 0.95rem; color: var(--text-muted);">
+          Ready. Upload sources or ask a question.
+        </p>
+      </div>
+    </div>
+
+    <div class="input-area">
+      <div class="input-wrapper">
+        <textarea
+          id="query-input"
+          placeholder="Ask a question about your sources..."
+          rows="1"
+        ></textarea>
+        <button class="send-btn" id="send-btn" title="Send">➤</button>
+      </div>
+    </div>
+  </main>
+
+</div>
+
+<script src="/static/notebook.js"></script>
+</body>
+</html>

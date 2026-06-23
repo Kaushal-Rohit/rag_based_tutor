@@ -6,3 +6,18 @@ __pycache__/
 *.egg-info/
 dist/
 build/
+
+# Logs (persisted via Docker volume, not committed)
+logs/
+
+# Generated benchmark outputs
+benchmarks/results.md
+benchmarks/results.json
+
+# IDE
+.vscode/
+.idea/
+
+# Private
+UPGRADE_LOG.md
+opus_brief_addendum_notebook_upload.md
